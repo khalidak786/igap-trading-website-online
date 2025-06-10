@@ -70,319 +70,151 @@ const App = () => {
             { name: 'Electrical Cables & Wires', description: 'Conductors for power transmission and electrical systems.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-yellow-600 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Electrical plug
             { name: 'Solar Panels', description: 'Devices for converting sunlight into electricity.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-blue-500 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Solar panel
             { name: 'Wind Turbines', description: 'Equipment for converting wind energy into electricity.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-teal-500 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Wind turbine
-            { name: 'Pharmaceutical Raw Materials', description: 'Active pharmaceutical ingredients (APIs) and excipients for drug manufacturing.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-lime-500 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Pill/capsule
-            { name: 'Specialty Chemicals', description: 'Chemicals used for specific applications, e.g., in paints, coatings, adhesives.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-indigo-700 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Atom
-            { name: 'Construction Aggregates', description: 'Sand, gravel, and crushed stone for concrete and infrastructure.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-amber-700 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Heap of gravel
-            { name: 'Wood Products (Lumber, Plywood)', description: 'Processed timber for construction and furniture manufacturing.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-amber-900 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Stack of wood planks
-            { name: 'Paper Products', description: 'Various types of paper, cardboard, and packaging materials.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-blue-400 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Stack of paper
+            { name: 'Pharmaceutical Raw Materials', description: 'Active pharmaceutical ingredients (APIs) and excipients for drug manufacturing.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-lime-500 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Pharmaceutical pill
         ],
-        'Recyclables & Environmental Solutions': [
-            { name: 'Recycled Plastics (PET, HDPE, PVC, LDPE, PP, PS, Other)', description: 'Post-consumer and industrial plastic waste for reprocessing into new products, supporting a circular economy.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-600 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Recycling symbol for plastics
-            { name: 'Scrap Metals (Ferrous & Non-Ferrous)', description: 'Recyclable metal waste including steel, aluminum, copper, and brass for melting and re-use, reducing mining impacts.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-700 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Magnet with scrap
-            { name: 'Waste Paper & Cardboard', description: 'Recovered paper and packaging materials for pulp and paper mills, reducing deforestation.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-500 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Stack of folded paper
-            { name: 'Cullet (Recycled Glass)', description: 'Crushed waste glass used in new glass production, reducing energy consumption.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-400 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Broken glass shards
-            { name: 'E-Waste (Electronic Waste)', description: 'Discarded electronic devices, a source of valuable materials and hazardous substances, requiring responsible recycling.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-800 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Computer chip
-            { name: 'Organic Waste Solutions', description: 'Technologies and services for composting and anaerobic digestion of organic waste to produce biogas and fertilizer.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-600 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Compost bin
-            { name: 'Hazardous Waste Management', description: 'Solutions for the safe collection, transportation, treatment, and disposal of hazardous industrial waste.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-red-700 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Biohazard symbol
+        'Commodity-Linked Financial Instruments': [
+            { name: 'Futures Contracts (e.g., WTI Crude Futures)', description: 'Agreements to buy/sell a commodity at a predetermined price and date.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-600 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Chart/graph
+            { name: 'Options Contracts', description: 'Gives the holder the right, but not the obligation, to buy/sell a commodity.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-blue-600 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Scales of justice
+            { name: 'Exchange Traded Funds (ETFs)', description: 'Investment funds that hold commodities or commodity futures.', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-purple-600 mx-auto"><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-5.325 0-9.75 3.99-9.75 9s4.425 9 9.75 9 9.75-3.99 9.75-9-4.425-9-9.75-9zm0 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 12a.75.75 0 000 1.5h.008a.75.75 0 000-1.5H12z" clip-rule="evenodd" /></svg>' }, // Stock chart
         ],
     };
 
-    // No longer need this useEffect as search bar is removed from homepage
-    // and ProductsPage handles its own filtering based on searchTerm prop
-    // useEffect(() => {
-    //     const allProducts = Object.values(productData).flat(); // Flatten all products into a single array
-    //     if (searchTerm) {
-    //         const lowercasedSearchTerm = searchTerm.toLowerCase();
-    //         const results = allProducts.filter(product =>
-    //             product.name.toLowerCase().includes(lowercasedSearchTerm) ||
-    //             product.description.toLowerCase().includes(lowercasedSearchTerm)
-    //         );
-    //         setFilteredProducts(results);
-    //     } else {
-    //         setFilteredProducts([]); // Clear results if search term is empty
-    //     }
-    // }, [searchTerm]);
+    // Placeholder for API key, if needed for future LLM integration.
+    // const apiKey = "";
 
-    // Page Components
+    // Component to render the Home page
+    const HomePage = ({ setCurrentPage }) => (
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-800 p-4">
+            <header className="w-full max-w-4xl text-center mb-12">
+                <div className="flex items-center justify-center">
+                    {/* SVG Icon for Global Trade */}
+                    <div dangerouslySetInnerHTML={{ __html: globalTradeSvg }} />
+                    <h1 className="text-5xl md:text-6xl font-extrabold text-blue-700 leading-tight">
+                        IGap Trading
+                    </h1>
+                </div>
+                <p className="mt-4 text-xl md:text-2xl text-gray-600">
+                    Your Gateway to Global Commodity Trade
+                </p>
+            </header>
 
-    // HeroBanner Component for the Home Page
-    const HeroBanner = ({ svgContent, title, subtitle }) => (
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 rounded-lg shadow-xl text-center mb-10">
-            <div dangerouslySetInnerHTML={{ __html: svgContent }} className="mb-6" />
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">{title}</h1>
-            <p className="text-lg md:text-xl font-light max-w-3xl mx-auto opacity-90">{subtitle}</p>
+            <section className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 max-w-4xl w-full text-center border-b-4 border-blue-500 transform transition duration-500 hover:scale-105">
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                    What We Offer
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                    At IGap Trading, we specialize in facilitating the seamless and efficient trade of a wide range of global commodities. Leveraging deep market insights and a robust network, we connect buyers and sellers across continents, ensuring transparency, reliability, and competitive pricing.
+                </p>
+                <button
+                    onClick={() => setCurrentPage('products')}
+                    className="mt-8 px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transform transition duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                >
+                    Explore Products
+                </button>
+            </section>
+
+            <section className="bg-blue-700 text-white rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl w-full text-center transform transition duration-500 hover:scale-105">
+                <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
+                <p className="text-lg leading-relaxed">
+                    To be the leading platform for global commodity trade, empowering businesses with the tools and connections they need to thrive in an interconnected world.
+                </p>
+            </section>
+
+            <footer className="mt-12 text-center text-gray-500 text-sm">
+                <p>&copy; {new Date().getFullYear()} IGap Trading. All rights reserved.</p>
+                <div className="flex justify-center space-x-4 mt-2">
+                    <a href="#privacy" className="hover:underline">Privacy Policy</a>
+                    <a href="#terms" className="hover:underline">Terms of Service</a>
+                </div>
+            </footer>
         </div>
     );
 
-    const HomePage = ({ globalTradeSvg }) => (
-        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-128px)] p-4 text-center">
-            <HeroBanner
-                svgContent={globalTradeSvg}
-                title="Your Global Trading Partner"
-                subtitle="Connecting markets and delivering comprehensive solutions for your worldwide supply chain needs."
-            />
-            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
-                Leveraging over two decades of expertise in finance, logistics, manufacturing, and trading to deliver comprehensive solutions for your global supply chain needs.
-            </p>
-        </div>
-    );
-
-    const AboutUsPage = () => (
-        <div className="p-6 md:p-8 lg:p-10 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">About Us</h2>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-                At IGap Trading, we bring a wealth of knowledge and practical experience to the complex world of global commodity and product trading. With over two decades of dedicated involvement in finance, logistics, manufacturing, and international trade, our foundation is built on deep industry insight and a proven track record.
-            </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-                Headquartered in the vibrant economic hub of the **United Arab Emirates**, we strategically operate with a global reach. Our robust network extends through our established offices in **Canada**, the **United Kingdom**, **India**, and **Pakistan**, enabling us to efficiently connect markets and streamline international transactions.
-            </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-                We pride ourselves on our holistic approach, managing the **complete trade cycle** from the initial procurement of raw materials to the final delivery at the buyer's designated location. Our expertise in logistics ensures **just-in-time deliveries**, optimizing supply chains and minimizing costs for our partners.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-                Our comprehensive understanding spans every facet of trade – from intricate financial structures and trade finance mechanisms to banking relations, technological integration, and hands-on operational excellence. This allows us to engage at any point in the value chain, from securing raw materials to facilitating seamless sales proceeds collection and handover to sellers.
-            </p>
-        </div>
-    );
-
-    const ExpertisePage = () => (
-        <div className="p-6 md:p-8 lg:p-10 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">Our Expertise & Value Proposition</h2>
-            <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-blue-500 mr-2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.767 8.767 0 0115.75 6.75a.75.75 0 00.724-.724A9 9 0 1021 12.75h-.254a3.75 3.75 0 01-3.672-3.218 3.75 3.75 0 013.672-4.218z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.767 8.767 0 0115.75 6.75a.75.75 0 00.724-.724A9 9 0 1021 12.75h-.254a3.75 3.75 0 01-3.672-3.218 3.75 3.75 0 013.672-4.218z" />
-                    </svg>
-                    Comprehensive Trade Cycle Management
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                    We manage the entire trade lifecycle, ensuring seamless operations from the initial procurement of raw materials to their final delivery at the buyer’s designated location. Our end-to-end solutions cover every critical step, providing efficiency and peace of mind.
-                </p>
-            </div>
-
-            <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-blue-500 mr-2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18L17.25 9M17.25 9a.75.75 0 01.75.75V18M17.25 9h-8.25" />
-                    </svg>
-                    Logistics for Just-in-Time Deliveries
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                    Our robust logistics capabilities are designed to facilitate just-in-time (JIT) deliveries, ensuring that products reach their destination precisely when needed. This meticulous planning minimizes storage costs, optimizes inventory, and enhances operational flow for our clients.
-                </p>
-            </div>
-
-            <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-blue-500 mr-2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.305a11.164 11.164 0 005.814-5.594 1.5 1.5 0 012.115-.177l.754.754H3.921a.75.75 0 01-.708-.868L4.148 2.5z" />
-                    </svg>
-                    Holistic Understanding & Operational Excellence
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                    Our team possesses a holistic understanding of the entire trade ecosystem, encompassing financial intricacies, trade finance, banking operations, cutting-edge technology, and practical operational expertise. This allows us to strategically intervene and add value at any level of the supply chain, from sourcing raw materials to managing sales proceeds.
-                </p>
-            </div>
-
-            <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-blue-500 mr-2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 009-9H3a9 9 0 009 9z" />
-                    </svg>
-                    Global Network & Market Access
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                    With our head office in the UAE and branch offices in Canada, UK, India, and Pakistan, we offer unparalleled global market access. This extensive network facilitates seamless cross-border transactions and enables us to identify and capitalize on emerging opportunities worldwide.
-                </p>
-            </div>
-        </div>
-    );
-
-    const ProductsPage = ({ products, searchTerm }) => {
-        // State for expanded product details
-        const [expandedProduct, setExpandedProduct] = useState(null);
-
-        // Filter products based on search term (if any)
-        const filteredAndCategorizedProducts = {};
-        if (searchTerm) {
-            const lowercasedSearchTerm = searchTerm.toLowerCase();
-            for (const category in products) {
-                const filtered = products[category].filter(product =>
-                    product.name.toLowerCase().includes(lowercasedSearchTerm) ||
-                    product.description.toLowerCase().includes(lowercasedSearchTerm)
-                );
-                if (filtered.length > 0) {
-                    filteredAndCategorizedProducts[category] = filtered;
-                }
-            }
-        } else {
-            // If no search term, display all products by category
-            Object.assign(filteredAndCategorizedProducts, products);
-        }
+    // Component to display Products by Category
+    const ProductsPage = ({ setCurrentPage }) => {
+        const [activeCategory, setActiveCategory] = useState(Object.keys(productData)[0]); // Set first category as default
 
         return (
-            <div className="p-6 md:p-8 lg:p-10 max-w-5xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">Our Products</h2>
+            <div className="min-h-screen bg-gray-50 text-gray-800 p-4">
+                <header className="bg-blue-700 text-white p-6 rounded-b-3xl shadow-lg text-center relative mb-8">
+                    <button
+                        onClick={() => setCurrentPage('home')}
+                        className="absolute top-4 left-4 px-4 py-2 bg-blue-600 rounded-full shadow hover:bg-blue-800 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    >
+                        &larr; Back to Home
+                    </button>
+                    <h1 className="text-4xl font-extrabold">Our Products</h1>
+                    <p className="mt-2 text-lg">Diverse Commodities for Global Markets</p>
+                </header>
 
-                {Object.keys(filteredAndCategorizedProducts).length === 0 && searchTerm && (
-                    <p className="text-gray-600 text-center text-lg mt-8">No products found matching "{searchTerm}".</p>
-                )}
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                    {/* Category Navigation */}
+                    <nav className="flex flex-wrap justify-center gap-4 mb-8">
+                        {Object.keys(productData).map((category) => (
+                            <button
+                                key={category}
+                                onClick={() => setActiveCategory(category)}
+                                className={`px-6 py-3 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 shadow-md
+                                    ${activeCategory === category
+                                        ? 'bg-blue-600 text-white border-2 border-blue-800'
+                                        : 'bg-white text-blue-700 border-2 border-blue-400 hover:bg-blue-50'
+                                    }`}
+                            >
+                                {category}
+                            </button>
+                        ))}
+                    </nav>
 
-                {Object.entries(filteredAndCategorizedProducts).map(([category, productsList]) => (
-                    <div key={category} className="mb-10">
-                        <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-blue-500 mr-2">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 7.5L12 3.75m9 3.75L12 3.75m9 3.75v9l-8.25 4.5-8.25-4.5v-9m9 3.75l-8.25 4.5m8.25-4.5v9l-8.25 4.5" />
-                            </svg>
-                            {category}
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {productsList.map((product, index) => (
-                                <div
-                                    key={index}
-                                    className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center cursor-pointer hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1"
-                                    onClick={() => setExpandedProduct(expandedProduct === product ? null : product)}
+                    {/* Product Listing */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {productData[activeCategory] && productData[activeCategory].map((product, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-2xl shadow-lg p-6 text-center border-t-4 border-blue-500 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+                            >
+                                <div dangerouslySetInnerHTML={{ __html: product.svg }} className="mb-4" />
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
+                                <p className="text-gray-700 text-base">{product.description}</p>
+                                <button
+                                    className="mt-4 px-6 py-2 bg-blue-500 text-white font-medium rounded-full hover:bg-blue-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                                    onClick={() => alert(`Inquiry for ${product.name}`)} // Using alert for now, consider a custom modal
                                 >
-                                    <div dangerouslySetInnerHTML={{ __html: product.svg }} />
-                                    <h4 className="text-xl font-medium text-gray-900 mt-4 mb-2">{product.name}</h4>
-                                    <p className="text-gray-600 text-sm">{product.description}</p>
-                                    {expandedProduct === product && (
-                                        <div className="mt-4 p-3 bg-gray-50 rounded-md border border-gray-200 w-full text-left">
-                                            <p className="text-gray-700 font-medium">Details:</p>
-                                            <p className="text-gray-600 text-sm">{product.description} More specific details on quality, origin, and typical applications would be available upon inquiry.</p>
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
+                                    Inquire
+                                </button>
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
+
+                <footer className="mt-12 text-center text-gray-500 text-sm">
+                    <p>&copy; {new Date().getFullYear()} IGap Trading. All rights reserved.</p>
+                </footer>
             </div>
         );
     };
 
-    // Navigation Bar Component
-    const Navbar = () => (
-        <nav className="bg-gray-900 p-4 shadow-lg fixed top-0 w-full z-10">
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-                <div className="text-white text-2xl font-bold mb-4 md:mb-0 cursor-pointer" onClick={() => setCurrentPage('home')}>
-                    IGap Trading
-                </div>
-                <ul className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-8 text-lg">
-                    <li>
-                        <button
-                            onClick={() => setCurrentPage('home')}
-                            className={`text-white hover:text-blue-400 transition-colors duration-300 ${currentPage === 'home' ? 'text-blue-400 font-semibold' : ''}`}
-                        >
-                            Home
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            onClick={() => setCurrentPage('about')}
-                            className={`text-white hover:text-blue-400 transition-colors duration-300 ${currentPage === 'about' ? 'text-blue-400 font-semibold' : ''}`}
-                        >
-                            About Us
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            onClick={() => setCurrentPage('expertise')}
-                            className={`text-white hover:text-blue-400 transition-colors duration-300 ${currentPage === 'expertise' ? 'text-blue-400 font-semibold' : ''}`}
-                        >
-                            Expertise
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            onClick={() => setCurrentPage('products')}
-                            className={`text-white hover:text-blue-400 transition-colors duration-300 ${currentPage === 'products' ? 'text-blue-400 font-semibold' : ''}`}
-                        >
-                            Products
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    );
-
-    // Footer Component
-    const Footer = () => (
-        <footer className="bg-gray-900 text-white p-6 md:p-8 mt-10">
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-                <div className="mb-4 md:mb-0">
-                    <h3 className="text-xl font-bold mb-2">IGap Trading</h3>
-                    <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} All rights reserved.</p>
-                </div>
-                <div className="mb-4 md:mb-0">
-                    <h3 className="text-xl font-bold mb-2">Contact Us</h3>
-                    <p className="text-gray-400">Email: <a href="mailto:contact@igaptrading.com" className="hover:text-blue-400">contact@igaptrading.com</a></p>
-                    <p className="text-gray-400">Phone (UAE): <a href="tel:+971564166810" className="hover:text-blue-400">+971 564166810</a></p>
-                    <p className="text-gray-400">Phone (UK): <a href="tel:+447747238071" className="hover:text-blue-400">+44 7747238071</a></p>
-                    <a
-                        href="https://wa.me/971564166810"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-green-400 hover:text-green-300 mt-2 rounded-full px-3 py-1 bg-green-700 hover:bg-green-600 transition-colors duration-300"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-1">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.557-3.844-1.557-5.874 0-6.19 5.023-11.216 11.216-11.216 3.09 0 6.008 1.246 8.196 3.434s3.434 5.106 3.434 8.196c0 6.19-5.023 11.216-11.216 11.216-1.996 0-3.923-.529-5.61-1.44l-6.262 1.625zm6.559-4.836c1.324.793 2.894 1.291 4.59.261 4.298-2.679 6.467-9.421 4.793-13.687-1.391-3.696-6.666-5.882-10.42-3.876-2.583 1.341-4.116 4.316-4.116 7.643 0 1.258.266 2.477.784 3.633l-1.579 5.867 5.867-1.579zm6.758-2.923c-.272-.134-.582-.201-.9-.201-.318 0-.628.067-.9.201-.272.134-.49.33-.652.582-.162.252-.244.536-.244.852 0 .316.082.6.244.852.162.252.38.448.652.582.272.134.582.201.9.201.318 0 .628-.067.9-.201l.732-.366c.272-.134.49-.33.652-.582.162-.252.244-.536.244-.852 0-.316-.082-.6-.244-.852-.162-.252-.38-.448-.652-.582l-.732-.366z" />
-                        </svg>
-                        WhatsApp
-                    </a>
-                </div>
-            </div>
-        </footer>
-    );
-
-    // Main render logic based on currentPage state
+    // Simple routing logic using a switch statement
     const renderPage = () => {
         switch (currentPage) {
             case 'home':
-                return <HomePage globalTradeSvg={globalTradeSvg} />;
-            case 'about':
-                return <AboutUsPage />;
-            case 'expertise':
-                return <ExpertisePage />;
+                return <HomePage setCurrentPage={setCurrentPage} />;
             case 'products':
-                // Since there's no search bar on home, searchTerm will effectively be empty
-                // unless it's set by another mechanism. ProductsPage will display all products.
-                return <ProductsPage products={productData} searchTerm={searchTerm} />;
+                return <ProductsPage setCurrentPage={setCurrentPage} />;
             default:
-                return <HomePage globalTradeSvg={globalTradeSvg} />;
+                return <HomePage setCurrentPage={setCurrentPage} />;
         }
     };
 
     return (
-        <div className="font-inter antialiased bg-gray-50 text-gray-800 min-h-screen flex flex-col">
-            <style>
-                {`
-                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-                body {
-                    font-family: 'Inter', sans-serif;
-                }
-                .animate-pulse {
-                    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-                }
-                @keyframes pulse {
-                    0%, 100% {
-                        opacity: 1;
-                    }
-                    50% {
-                        opacity: .5;
-                    }
-                }
-                `}
-            </style>
-            <script src="https://cdn.tailwindcss.com"></script>
-            <Navbar />
-            <main className="flex-grow mt-16 pb-8"> {/* Added mt-16 to account for fixed navbar height */}
-                {renderPage()}
-            </main>
-            <Footer />
+        <div className="font-sans antialiased">
+            {/* Tailwind CSS CDN - Ensure this is in public/index.html head for full effect */}
+            {/* <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> */}
+            {/* Inter font from Google Fonts */}
+            {/* <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> */}
+
+            {renderPage()}
         </div>
     );
 };
 
-export default App;
+export default App; // Export the App component as default
