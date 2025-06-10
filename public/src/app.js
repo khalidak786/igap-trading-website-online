@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// Main App Component
+//  Main App Component
 const App = () => {
     // State to manage the current page, simulating routing
     const [currentPage, setCurrentPage] = useState('home');
